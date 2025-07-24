@@ -46,7 +46,6 @@ It supports order management, inventory tracking, table booking, real-time sales
 
 ## 📂 Installation
 
-> 📌 You must have a valid purchase code from CodeCanyon to install.
 
 ### Requirements
 - PHP 8.1+
