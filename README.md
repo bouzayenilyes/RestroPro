@@ -15,7 +15,6 @@
 
 It supports order management, inventory tracking, table booking, real-time sales reporting, and more — all in one intuitive interface.
 
-> 🔐 This software is a **commercial product** purchased from CodeCanyon. You must own a license to use or deploy it.
 
 ---
 
