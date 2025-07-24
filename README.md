@@ -47,20 +47,33 @@ It supports order management, inventory tracking, table booking, real-time sales
 ## 📂 Installation
 
 
-### Requirements
-- PHP 8.1+
-- MySQL 5.7+
-- Apache/Nginx
-- Composer
-- Node.js & npm (for assets)
 
-### Steps
+---
+
+## 📂 Installation Guide
+
+### 🧾 Prerequisites
+
+- Node.js v18+
+- MySQL 5.7+
+- Git
+- npm or yarn
+
+---
+
+### 🛠️ Backend Setup (`/backend`)
 
 ```bash
-git clone https://github.com/your-username/restropro-saas.git
-cd restropro-saas
-composer install
+git clone https://github.com/your-username/restropro.git
+cd restropro/backend
+
+npm install
 cp .env.example .env
-php artisan key:generate
-php artisan migrate --seed
-php artisan storage:link
+# Set DB credentials and secrets in .env
+
+# Create MySQL database manually or use migration script if available
+npm run migrate
+npm run seed    # optional: populate with sample data
+
+npm start       # or: npm run dev
+an storage:link
