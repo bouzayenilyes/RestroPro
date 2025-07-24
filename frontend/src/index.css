@@ -1,0 +1,128 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700;1,900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --background: #fff;
+    --foreground: #000;
+    --restro-green-light: #ECF1EB;
+    --restro-green: #70B56A;
+    --restro-green-10: #70b56a18;
+    --restro-border-green: #DCE7DB;
+    --restro-text: #6b7280;
+    --restro-gray: #f3f4f6;
+    --restro-ring: #000;
+    --restro-bg-gray: #f3f4f6;
+    --restro-card-bg: #f3f4f6;
+    --restro-button-hover: #e5e6e8;
+    --restro-green-button-hover: #629c5d;
+    --restro-red: #f87171;
+    --restro-red-hover: #fee2e2;
+    --restro-yellow: #f4d6a1;
+    --restro-bg-yellow: #a23ca6;
+    --restro-yellow-hover: #e1920a;
+    --restro-checkbox: #e5e6e8;
+
+    --restro-green-dark: #243922;
+    --restro-border-green-light: #dce7db;
+    --restro-superadmin-widget-bg: #bedc74;
+    --restro-superadmin-text-green: #387f39;
+    --restro-superadmin-text-black: #444444;
+
+    --scroll-wrapper-start: rgba(255, 255, 255, 1);
+    --scroll-wrapper-end: rgba(255, 255, 255, 0);
+}
+
+.dark {
+    --background: #000;
+    --foreground: #fff;
+    --restro-green-light: #121212;
+    --restro-green: #2e7746;
+    --restro-green-10: #2e774625;
+    --restro-border-green: #333333;
+    --restro-text: #F0F0F0;
+    --restro-gray: #232323;
+    --restro-ring: #888;
+    --restro-bg-gray: #242526;
+    --restro-card-bg: #121212;
+    --restro-button-hover: #353535;
+    --restro-green-button-hover: #205331;
+    --restro-red: #dc2626;
+    --restro-red-hover: #fecaca;
+    --restro-yellow: #f0a523;
+    --restro-bg-yellow: #fef9c3;
+    --restro-yellow-hover: #dbb743;
+    --restro-checkbox: #242526;
+
+    --restro-green-dark: #333333;
+    --restro-border-green-light: #222222;
+    --restro-superadmin-widget-bg: #bedc74;
+    --restro-superadmin-text-green: #387f39;
+    --restro-superadmin-text-black: #444444;
+
+    --scroll-wrapper-start: rgba(0, 0, 0, 1);
+    --scroll-wrapper-end: rgba(0, 0, 0, 0);
+}
+
+/* Light Mode (default styles) */
+::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #88888888;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #989898;
+}
+
+/* Left Gradient Overlay */
+.custom-scroll-wrapper {
+    position: relative;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    /* Smooth scrolling on iOS */
+}
+
+/* Right Gradient Overlay */
+.custom-scroll-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    /* Width of the gradient overlay */
+    height: 100%;
+    background: linear-gradient(to left, var(--scroll-wrapper-start), var(--scroll-wrapper-end));
+    /* Adjust color as needed */
+    z-index: 2;
+    /* Keep it above content */
+    pointer-events: none;
+    /* Ensure it doesn’t block interactions */
+}
+
+
+@layer base {
+    html {
+        font-family: 'Nunito', sans-serif;
+        font-optical-sizing: auto;
+    }
+}
+
+.outline-text {
+    text-shadow:
+        1px 1px 0 #000,
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}

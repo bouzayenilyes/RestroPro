@@ -1,0 +1,36 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "NODE_ENV=production node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.2",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.5.0",
+    "express-rate-limit": "^7.1.5",
+    "express-useragent": "^1.0.15",
+    "express-validator": "^7.0.1",
+    "i18n": "^0.15.1",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.6.1",
+    "nanoid": "^3.3.7",
+    "nodemailer": "^6.9.13",
+    "rotating-file-stream": "^3.2.3",
+    "socket.io": "^4.7.5",
+    "stripe": "^15.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
